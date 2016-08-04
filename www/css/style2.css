@@ -1,0 +1,23 @@
+.clear{clear:both;}
+
+.ata1{background-color: #8d421f; text-align: center;}
+
+.button-light{margin-top: 10px; margin-bottom: 10px;}
+
+.tabs-positive > .tabs a{display: none; border: 0px !important; border-bottom-color: transparent !important;}
+
+.tabs-positive > .tabs{border: 0px !important; border-bottom-color: transparent !important; background-color: #8d421f;}
+
+.title-center{border: 0px !important; border-bottom-color: transparent !important; background-color: #8d421f; width: 100%}
+
+.bar .title{width: 100%; background-color: #8d421f; margin: 0px; height: 44px;}
+
+.dallama{background-color: black;}
+
+.bar{width: 100%;}
+
+.overview{margin-top: 10%;}
+
+.overview .pdesc{float: left; text-align: left !important; margin-left: 3%; margin-right: 1%;}
+
+.overview h3{text-align: left !important; margin-left: 3%; margin-right: 1%;}

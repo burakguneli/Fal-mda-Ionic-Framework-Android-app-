@@ -1,0 +1,77 @@
+<head>
+  <link href="css/style1.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+</head>
+
+<ion-view hide-nav-bar="true" hide-tabs>
+  <ion-content class="ata">
+
+        <a href="#/tab/dash" class="hide-on-keyboard-open" rel="nofollow"><img id="logo" src="img/falimda.png" alt="" /></a>
+
+        <div class="clear"></div>
+
+        <div class="her_sey" ng-controller="liste">
+
+            <div class="bar bar-subheader item-input-inset bar-stable">
+
+              <label class="item-input-wrapper">
+
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" ng-model="input" ng-change="kapa=input; query=input; search()" placeholder="Falınıza dair kelime girin">
+                <input type="hidden" ng-model="kapa" />
+                <input type="hidden" ng-model="query" />
+
+              </label>
+
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="text" ng-hide="kapa">
+
+              <h2 class="baslik">Nasıl Kullanırım ?</h2>   
+              <p>
+                “Falımda” kahve falınızda gördüğünüz semboller ve anlamları üzerine bilgilendirme amaçlı yayın yapan tamamen ücretsiz bir web sitesi ve android mobil uygulamasıdır.
+
+                Kullanıcılarımız falimda.com ‘a ya da Falımda android mobil uygulamamıza tıklayarak istedikleri zaman istedikleri kadar ziyaret gerçekleştirebilir ve kahve fallarında gördükleri sembolleri anasayfamızda bulunan arama kutucuğuna yazarak arayabilirler ve anlamlarını öğrenebilirler.
+
+                Veritabanımızda barındırdığımız fal sembollerinin anlamları, editörlerimiz tarafından halk arasında inanılan genel inanışlar esas alınarak tamamen eğlence amaçlı ve hoşça vakit geçirtmek için yazılmışlardır ve hiçbir kesinlik iddaası taşımamaktadırlar.
+
+                Ziyaretçilerimizin Falimda.com ya da Falımda mobil uygulaması aracılığıyla araştırdıkları fal sembol anlamlarından dolayı yaşayacakları tüm duygu, düşünce ve olaylar tamamen kendilerini bağlamaktadır. Yazdığımız sembol anlamlarının hiçbir kesinliği olmamakla beraber inanmak ya da inanmamak ziyaretçilerimizin özgür iradeleriyle verecekleri karara bağlı olduğundan dolayı sorumluluk da onlara aittir.
+
+                Ne demişler? “Fala inanma falsız da kalmaz”
+
+                Keyifli ziyaretler yaşamanız temennisiyle
+
+                Falımda Editörleri
+              </p>
+              <p>
+                İyi eğlenceler!
+              </p>
+
+            </div>  
+            <div class="clear"></div>
+          
+            <ion-list> <!-- Results of the search controller -->
+
+              <ion-item>
+                <div id="result_1" class="result" ng-repeat="item in result | filter: query | limitTo: 10">
+                  <a href="#/tab/chats/{{item.id}}">
+                    <p class="title">                      
+                      <span class="ic"><b>{{item.name}}</b></span>
+                      <br>
+                      <i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i> 
+                      <br>                       
+                      <span class="ic1">Falımda <b>{{item.name}}</b> Görmek</span>
+                    </p>
+                  </a>    
+                </div>
+              </ion-item>
+
+            </ion-list>
+
+            <div class="clear"></div>
+
+          </div>
+    </ion-content>
+</ion-view>

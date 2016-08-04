@@ -1,0 +1,29 @@
+<head>
+  <link href="css/style2.css" rel="stylesheet">
+</head>
+
+<ion-view hide-tabs="true" hide-tabs>
+  <ion-content class="ata1">
+
+
+    <div class="clear"></div>
+
+
+    <div ng-controller="detail">
+
+      <div class="overview">
+          <h3><b>Kahve Falında {{name}} Görmek</b></h3>
+        <br></br>
+        <p class="pdesc" ng-bind-html="description">
+          {{description}}
+        </p>
+      </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+    <a href="#/tab/dash" class="button button-outline button-light">Geri Dön</a>
+
+  </ion-content>
+</ion-view>
