@@ -20,12 +20,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         // select the right Ad Id according to platform
       if( /(android)/i.test(navigator.userAgent) ) { 
           admobid = { // for Android
-            banner: 'ca-app-pub-8927374835696568/2190108330',
+            banner: '',
           };
       }
       else {
         admobid = { // for Windows Phone
-          banner: 'ca-app-pub-8927374835696568/2190108330',
+          banner: '',
         };
       }
 
@@ -37,7 +37,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     });
 
     $cordovaGoogleAnalytics.debugMode();
-    $cordovaGoogleAnalytics.startTrackerWithId('UA-73539335-2');
+    $cordovaGoogleAnalytics.startTrackerWithId('');
     ionic.Platform.fullScreen();
 
   });
@@ -152,11 +152,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         // select the right Ad Id according to platform
         if( /(android)/i.test(navigator.userAgent) ) { 
             admobid = { // for Android
-                interstitial: 'ca-app-pub-8927374835696568/5196313538'
+                interstitial: ''
             };
         } else {
             admobid = { // for Windows Phone
-                interstitial: 'ca-app-pub-8927374835696568/5196313538'
+                interstitial: ''
             };
         }
 
